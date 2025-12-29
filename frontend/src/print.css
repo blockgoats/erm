@@ -1,0 +1,57 @@
+/* Print styles for Board Report PDF export */
+
+@media print {
+  @page {
+    size: letter;
+    margin: 1in;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  /* Ensure tables don't break awkwardly */
+  table {
+    page-break-inside: avoid;
+  }
+
+  /* Large fonts for board readability */
+  h1 {
+    font-size: 32pt;
+  }
+
+  h2 {
+    font-size: 24pt;
+  }
+
+  h3 {
+    font-size: 18pt;
+  }
+
+  /* Minimal colors - only red for alerts */
+  .text-red-600 {
+    color: #dc2626 !important;
+  }
+
+  .bg-red-50 {
+    background-color: #fef2f2 !important;
+  }
+
+  .border-red-400 {
+    border-color: #f87171 !important;
+  }
+}
+

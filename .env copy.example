@@ -1,0 +1,8 @@
+# ERM Platform Environment Variables
+# Copy this file to .env and update with your values
+
+# Backend API URL (for frontend)
+# VITE_API_URL=http://localhost:3001
+
+# Frontend URL (optional, defaults to http://localhost:3000)
+# VITE_APP_URL=http://localhost:3000
